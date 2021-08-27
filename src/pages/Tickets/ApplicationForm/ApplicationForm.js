@@ -22,7 +22,7 @@ const SUPPORTED_FORMATS = [
   "image/png",
 ];
 
-function ApplicationForm({ login, history }) {
+function ApplicationForm({ history }) {
   // Yup Validation Schema
   const validationSchema = useMemo(
     () =>
