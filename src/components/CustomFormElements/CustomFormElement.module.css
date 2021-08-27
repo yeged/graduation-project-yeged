@@ -1,0 +1,102 @@
+.container {
+  margin: 10px 30px;
+}
+
+.container label {
+  line-height: 2;
+  color: #14213d;
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 10px 15px;
+}
+
+.container p {
+  color: #fca311;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.container p::before {
+  display: inline;
+  content: "⚠ ";
+}
+
+.container input {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid white;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.19);
+}
+.container textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid white;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  resize: vertical;
+  height: 100px;
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.btn {
+  position: relative;
+  background: #14213d;
+  color: #e5e5e5;
+  border: none;
+  border-radius: 10px;
+  margin: 20px 50px;
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 20%;
+  float: right;
+  height: 60px;
+}
+.btn:hover {
+  background: #fca311;
+}
+
+.btn:active {
+  transition: 0.3s all;
+  transform: translateY(3px);
+  opacity: 0.8;
+}
+
+.buttonLoader::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 5px solid #fff;
+  border-top: 6px solid #fca311;
+  border-radius: 50%;
+  animation: button-loading-spinner 1s ease infinite;
+}
+@keyframes button-loading-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .btn {
+    margin: 0;
+    width: 100%;
+  }
+}

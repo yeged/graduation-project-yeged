@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+.nav {
+  display: block;
+  align-items: center;
+  overflow: hidden;
+  background-color: transparent;
+  padding: 0px 200px 0px 0px;
+}
+
+.nav a {
+  font-family: "Lobster", cursive;
+  float: right;
+  color: #f2f2f2;
+  padding: 30px 16px;
+  text-decoration: none;
+  font-size: 1.7em;
+}
+
+.nav a:hover {
+  color: #fca311;
+}
+
+.nav a.active {
+  font-family: "Pacifico", cursive;
+  color: #fca311;
+  font-size: 1.2em;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  float: left;
+  margin-left: 10%;
+}
+
+.nav .icon {
+  display: none;
+}
+@media screen and (max-width: 692px) {
+  .nav {
+    padding: 0;
+  }
+  .nav a:not(:first-child) {
+    display: none;
+  }
+  .nav button {
+    display: none;
+  }
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 692px) {
+  .nav.responsive {
+    position: relative;
+  }
+  .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .nav.responsive button {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

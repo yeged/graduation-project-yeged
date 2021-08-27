@@ -1,0 +1,42 @@
+.user {
+  width: 70%;
+  height: 80px;
+  display: flex;
+  overflow: hidden;
+  margin: 25px auto;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.user:active {
+  background-color: #d3d3d3;
+}
+
+.info {
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+}
+
+.user h2 {
+  display: inline;
+  font-size: 20px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  text-overflow: ellipsis;
+}
+
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+
+@media only screen and (max-width: 692px) {
+  .user {
+    height: 130px;
+  }
+}

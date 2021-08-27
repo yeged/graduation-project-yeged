@@ -1,0 +1,44 @@
+.container {
+  max-width: 800px;
+  margin: 80px auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #e5e5e5;
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.container h1 {
+  color: #fca311;
+  text-align: center;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.open {
+  color: green;
+}
+
+.closed {
+  color: red;
+}
+
+.fileContainer {
+  margin: 10px 30px;
+}
+
+.fileContainer a {
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  width: 100%;
+  background-color: #fca311;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.19);
+}
