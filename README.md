@@ -1,4 +1,4 @@
-# [Live Preview](https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley)
+# [Live Preview](https://graduation-project-yeged.vercel.app/)
 
 # React Ticket App
 
